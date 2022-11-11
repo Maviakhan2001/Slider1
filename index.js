@@ -7,8 +7,9 @@ function btnSlide(e){
 
 function showImage(e) {
     var i;
-    const img = document.querySelectorAll('img');
+    const img = document.querySelectorAll('a');
     const slider = document.querySelectorAll('.btn-slider span');
+    const content = document.querySelector('.content');
     
     if(e > img.length){
         indexValue = 1;
@@ -24,6 +25,8 @@ function showImage(e) {
     
     // content.scrollBy(1000, 0)
     img[indexValue-1].style.border = "2px solid red";
-    img[indexValue-1].style.margin = "0rem 10rem"
+    // img[indexValue-1].style.margin = "0rem 10rem/"
+
+    // document.querySelectorAll('.')
 
 }
